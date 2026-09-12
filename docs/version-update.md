@@ -2,13 +2,13 @@
 
 ## バージョンを更新する方法
 
-1. TARGET_GTEST_VERSION ファイルを編集:
+1. TARGET_GTEST_VERSION ファイルを編集します。
 
    ```bash
    echo "1.18.0" > TARGET_GTEST_VERSION
    ```
 
-2. 変更をコミット・プッシュ:
+2. 変更をコミット・プッシュします。
 
    ```bash
    git add TARGET_GTEST_VERSION
@@ -16,15 +16,15 @@
    git push
    ```
 
-3. GitHub Actions が自動的に:
-   - GoogleTest v1.18.0 をクローン
-   - Linux/Windows 向けにビルド
-   - ドキュメント (README.md、manual-build.md) を生成
-   - すべての変更をコミット
+3. GitHub Actions が次の処理を自動実行します。
+    - GoogleTest v1.18.0 をクローン
+    - Linux/Windows 向けにビルド
+    - ドキュメント (README.md、manual-build.md) を生成
+    - すべての変更をコミット
 
 ## 確認事項
 
-ワークフロー完了後、以下を確認:
+ワークフロー完了後、以下を確認します。
 
 - [ ] README.md にバージョン 1.18.0 が表示される
 - [ ] manual-build.md にバージョン 1.18.0 が表示される
@@ -39,7 +39,7 @@
 
 ## ローカルでのドキュメント生成テスト
 
-変更をプッシュする前に、ローカルでドキュメント生成をテストできます:
+変更をプッシュする前に、ローカルでドキュメント生成をテストできます。
 
 ```bash
 # ドキュメント生成スクリプトを実行
@@ -59,10 +59,10 @@ git diff manual-build.md
 
 ### ロールバック方法
 
-誤ったバージョンを設定した場合:
+誤ったバージョンを設定した場合は、次のように戻します。
 
 ```bash
-# TARGET_GTEST_VERSIONファイルを以前のコミットに戻す
+# TARGET_GTEST_VERSION ファイルを以前のコミットに戻す
 git log TARGET_GTEST_VERSION
 git checkout <commit-hash> TARGET_GTEST_VERSION
 git commit -m "Revert GoogleTest version to 1.17.0"

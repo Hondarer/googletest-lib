@@ -1,14 +1,14 @@
 # googletest-lib
 
-GoogleTest 1.17.0 のヘッダーとコンパイル済みライブラリを配布する repo です。
+GoogleTest 1.17.0 のヘッダーとコンパイル済みライブラリを配布するリポジトリです。
 
 source: [google/googletest](https://github.com/google/googletest)
 
 ## 概要
 
-この repo には、GoogleTest / Google Mock の配布用ヘッダーと、Linux / Windows 向けにビルド済みのライブラリが含まれます。
+このリポジトリには、GoogleTest / Google Mock の配布用ヘッダーと、Linux / Windows 向けにビルド済みのライブラリが含まれます。
 
-提供している主な配布先は以下です。
+提供している主な配布構成は以下のとおりです。
 
 - Linux: `lib/linux_el8_x64/`, `lib/linux_el9_x64/`, `lib/linux_el10_x64/`
 - Windows: `lib/windows_x64/md/`, `mdd/`, `mt/`, `mtd/`
