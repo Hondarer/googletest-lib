@@ -26,7 +26,7 @@ Linux 環境で gcc/g++ を使用して静的ライブラリ (.a) をビルド�
 - gcc/g++ コンパイラ
 - CMake 3.5 以降
 - make
-- googletest ソースコード
+- googletest ソース コード
 
 ### 必要なパッケージのインストール
 
@@ -135,7 +135,7 @@ cd ..
 
 ### カスタムインストール先を指定する場合
 
-デフォルトでは `/usr/local` にインストールされますが、カスタムパスを指定できます。
+既定では `/usr/local` にインストールされますが、カスタムパスを指定できます。
 
 ```bash
 mkdir -p build-static-release
@@ -153,7 +153,7 @@ cd ..
 
 ### 生成されるライブラリファイル (Linux)
 
-静的ライブラリ (.a) として以下のファイルが生成されます。
+静的ライブラリ (.a) として次のファイルが生成されます。
 
 - `libgmock.a` - Google Mock ライブラリ
 - `libgmock_main.a` - Google Mock main 関数付き
@@ -256,7 +256,7 @@ MSVC で 4 つのランタイムオプション (/MT, /MD, /MTd, /MDd) でビル
 ### 前提条件
 
 - Visual Studio 2022 Professional (CMake 付属)
-- googletest ソースコード
+- googletest ソース コード
 
 ### 環境変数
 
@@ -386,7 +386,7 @@ rm -f build-MDd/lib/Debug/*NOTFOUND.pdb
 
 ### 生成されるライブラリファイル (Windows)
 
-各ビルド設定で以下のライブラリが生成されます。
+各ビルド設定で次のライブラリが生成されます。
 
 - `gmock.lib` - Google Mock ライブラリ
 - `gmock_main.lib` - Google Mock main 関数付き
