@@ -1,15 +1,6 @@
 # googletest-lib
 
-GoogleTest # GoogleTest Target Version
-# このファイルでビルド対象の GoogleTest バージョンを指定します
-
-# バージョン更新時はこのファイルのみを編集してください
-
-# 形式: X.Y.Z (例: 1.17.0)
-
-# 参考: https://github.com/google/googletest/releases
-
-1.17.0 のヘッダーとコンパイル済みライブラリを配布する repo です。
+GoogleTest 1.17.0 のヘッダーとコンパイル済みライブラリを配布する repo です。
 
 source: [google/googletest](https://github.com/google/googletest)
 
